@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation Camp 3주차 Feedback</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+    <script type="text/javascript" src="/js/indexJs.js"></script>
+
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-32x32.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:image" content="../images/og.png"/>
+    <meta property="og:title" content="Innovation Camp 3주차 Feedback"/>
+    <meta property="og:description" content="3주차 피드백을 입력해주세요."/>
+</head>
+
+<body>
+
+<div class="background-header"></div>
+<div class="wrap">
+    <div class="header">
+        <h2>Innovation Camp 3주차 Feedback</h2>
+    </div>
+    <div class="area-write">
+        <div class="metadata1">
+            <input class="input" type="text" placeholder="title" name="title" id="title">
+            <input class="input" type="text" placeholder="id" name="username" id="username">
+            <input class="input" type="password" placeholder="password" name="password" id="password">
+        </div>
+        <textarea class="field" placeholder="3주차 피드백을 입력해주세요." name="contents" id="contents" cols="30" rows="10"></textarea>
+        <img src="images/send.png" alt="" onclick="writePost()">
+    </div>
+
+    <div id="cards-box" class="area-read">
+        <div class="card">
+            <!-- date/username 영역 -->
+            <div class="metadata">
+                <div class="date">
+                    July 27, 2022
+                </div>
+                <div id="1-username" class="username">
+                    Anonymous
+                </div>
+            </div>
+            <!-- contents 조회/수정 영역-->
+            <div class="contents">
+                <div id="1-contents" class="text">
+                    내용 작성
+                </div>
+                <div id="1-editarea" class="edit">
+                    <textarea id="1-textarea" class="te-edit" name="" id="" cols="30" rows="5"></textarea>
+                </div>
+            </div>
+            <!-- 버튼 영역-->
+            <div class="footer">
+                <img id="1-edit" onclick="editPost('1')" class="icon-start-edit" src="images/edit.png" alt="">
+                <img id="1-delete" onclick="deleteOne('1')" class="icon-delete" src="images/delete.png" alt="">
+                <img id="1-submit" onclick="submitEdit('1')" class="icon-end-edit" src="images/done.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
