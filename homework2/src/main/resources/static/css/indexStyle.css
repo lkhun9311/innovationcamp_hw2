@@ -1,0 +1,241 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #876445;
+}
+
+body {
+    margin: 0px;
+}
+
+.area-edit {
+    display: none;
+}
+
+.wrap {
+    width: 550px;
+    margin: 10px auto;
+}
+
+#contents {
+    width: 538px;
+}
+
+.area-write {
+    position: relative;
+    width: 538px;
+}
+
+.area-write img {
+    cursor: pointer;
+    position: absolute;
+    width: 22.2px;
+    height: 18.7px;
+    bottom: 15px;
+    right: 17px;
+}
+
+.background-header {
+    position: fixed;
+    z-index: -1;
+    top: 0px;
+    width: 100%;
+    height: 140px;
+    background-color: #876445;
+}
+
+.header {
+    margin-top: 50px;
+}
+
+.header h2 {
+    height: 33px;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 42px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.79;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header p {
+    margin: 40px auto;
+    width: 217px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -1.12px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#title {
+    margin-top: 35px;
+    width: 218px;
+    border: 2px solid #876445;
+    border-radius: 5px;
+}
+#title::placeholder {
+    font-weight: bolder;
+    color: #876445;
+}
+#title:focus {
+    outline: none;
+}
+
+#username {
+    margin-top: 5px;
+    border: 2px solid #876445;
+    border-radius: 5px;
+}
+#username::placeholder {
+    font-weight: bolder;
+    color: #876445;
+}
+#username:focus {
+    outline: none;
+}
+
+#password{
+    margin-top: 5px;
+    border: 2px solid #876445;
+    border-radius: 5px;
+}
+#password::placeholder {
+    font-weight: bolder;
+    color: #876445;
+}
+#password:focus {
+    outline: none;
+}
+
+textarea.field {
+    width: 501px !important;
+    height: 146px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 2px solid #876445;
+    padding: 18px;
+    resize: none;
+    margin-top: 5px;
+}
+
+textarea.field::placeholder {
+    width: 216px;
+    height: 16px;
+    /*font-family: 'Noto Sans KR', sans-serif;*/
+    font-size: 15px;
+    font-weight: bolder;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.96px;
+    text-align: left;
+    color: #876445;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.card {
+    width: 538px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 2px solid #876445;
+}
+
+.card .metadata {
+    position: relative;
+    display: flex;
+    /*font-family: 'Spoqa Han Sans';*/
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.77px;
+    text-align: left;
+    color: #adb5bd;
+    height: 14px;
+    padding: 10px 23px;
+}
+
+.card .metadata .date {
+
+}
+
+.card .metadata .username {
+    margin-left: 20px;
+}
+
+.contents {
+    padding: 0px 23px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.contents div.edit {
+    display: none;
+}
+
+.contents textarea.te-edit {
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    resize: none;
+    border-bottom: 1px solid #212529;
+    width: 100%;
+}
+
+.footer {
+    position: relative;
+    height: 40px;
+}
+
+.footer img.icon-show-or-hide {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: 91px;
+    width: 21px;
+    height: 16px;
+}
+
+.footer img.icon-start-edit {
+    cursor: pointer;
+    position: absolute;
+    bottom: 14px;
+    right: 55px;
+    width: 18px;
+    height: 18px;
+}
+
+.footer img.icon-end-edit {
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    bottom: 14px;
+    right: 55px;
+    width: 20px;
+    height: 15px;
+}
+
+.footer img.icon-delete {
+    cursor: pointer;
+    position: absolute;
+    bottom: 12px;
+    right: 19px;
+    width: 14px;
+    height: 18px;
+}
+
+#cards-box {
+    margin-top: 12px;
+}
